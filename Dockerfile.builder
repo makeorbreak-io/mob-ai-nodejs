@@ -1,9 +1,9 @@
 FROM mob-ai-nodejs:latest
 
 RUN mkdir /robot/
-ADD engine /robot/
-ADD source_code /robot/main.js
+ADD multipaint /robot/multipaint
+ADD source_code /robot/bot.js
 
 ENV NODE_PATH=/robot/
 
-ENTRYPOINT ["node", "robot/main.js"]
+ENTRYPOINT ["node", "robot/bot.js"]
