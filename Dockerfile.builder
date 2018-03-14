@@ -2,7 +2,7 @@ FROM mob-ai-nodejs:latest
 
 RUN mkdir /robot/
 ADD multipaint /robot/multipaint
-ADD source_code /robot/bot.js
+ADD bot.js /robot/bot.js
 
 ENV NODE_PATH=/robot/
 
